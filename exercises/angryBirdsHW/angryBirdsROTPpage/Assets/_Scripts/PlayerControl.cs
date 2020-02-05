@@ -28,7 +28,7 @@ public class PlayerControl : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, alpha*Mathf.Rad2Deg); //rotates the cannon around the Z axis by alpha angle, converts radians to degrees
 
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && piggy.transform.parent)
         {
             piggy.transform.parent = null;
             piggyBody.gravityScale = 1;

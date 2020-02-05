@@ -5,11 +5,12 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform piggy;
+    public Vector3 originalPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        originalPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -21,5 +22,10 @@ public class CameraFollow : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime); //we're in camera rn so we don't HAVE to do camera.main.transform.position.z
 
         }
+    }
+
+    public void ResetCameraPosition()
+    {
+        transform.position = originalPosition;
     }
 }

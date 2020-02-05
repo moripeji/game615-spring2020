@@ -10,6 +10,11 @@ public class Structure : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        ScoreManager.instance.SmashStructure();
+    }
+
     // Update is called once per frame
     void Update()
     {

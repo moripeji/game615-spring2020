@@ -150,6 +150,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxBlock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8851403491081773204, guid: 16cb43b18ef384afc954aa1dece8f004,
+        type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     - target: {fileID: 3592711720133937724, guid: 16cb43b18ef384afc954aa1dece8f004,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -369,6 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  resetDelay: 0.5
 --- !u!4 &275079520
 Transform:
   m_ObjectHideFlags: 0
@@ -742,6 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piggy: {fileID: 204654164}
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1114874808
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +858,7 @@ GameObject:
   - component: {fileID: 1189394740}
   m_Layer: 0
   m_Name: Grass
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,6 +964,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoxBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851403491081773204, guid: 16cb43b18ef384afc954aa1dece8f004,
+        type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 3592711720133937724, guid: 16cb43b18ef384afc954aa1dece8f004,
         type: 3}
@@ -1143,6 +1155,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 8851403491081773204, guid: 16cb43b18ef384afc954aa1dece8f004,
+        type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     - target: {fileID: 3592711720133937724, guid: 16cb43b18ef384afc954aa1dece8f004,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1280,6 +1297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TriangleBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8527138702135745225, guid: fd2564e3853fa4168b93d22d601632de,
+        type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 8527138702135745230, guid: fd2564e3853fa4168b93d22d601632de,
         type: 3}
