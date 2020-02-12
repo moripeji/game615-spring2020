@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class PiggyCollision : MonoBehaviour
 {
-    const int timeToReset = 3;
+    const int timeToReset = 10;
     Vector3 originalPosition;
     Transform parent;
+    public GameObject explosion;
+    private GameObject red;
+    private GameObject black;
+    private GameObject yellow;
+    private GameObject blue;
 
     // Start is called before the first frame update
     void Start()
     {
         originalPosition = transform.localPosition;
         parent = transform.parent;
+        red = GameObject.FindWithTag("EnemyRed");
+        black = GameObject.FindWithTag("EnemyBlack");
+        yellow = GameObject.FindWithTag("EnemyYellow");
+        blue = GameObject.FindWithTag("EnemyBlue");
     }
 
     // Update is called once per frame
@@ -34,6 +43,30 @@ public class PiggyCollision : MonoBehaviour
         if (collision.gameObject.tag == "Structure")
         {
             ScoreManager.instance.PigSmashStructure();
+        }
+        if (collision.gameObject.tag == "EnemyBlack")
+        {
+            ScoreManager.instance.PigSmashBlack();
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(black);
+        }
+        if (collision.gameObject.tag == "EnemyRed")
+        {
+            ScoreManager.instance.PigSmashRed();
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(red);
+        }
+        if (collision.gameObject.tag == "EnemyYellow")
+        {
+            ScoreManager.instance.PigSmashYellow();
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(yellow);
+        }
+        if (collision.gameObject.tag == "EnemyBlue")
+        {
+            ScoreManager.instance.PigSmashBlue();
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(blue);
         }
     }
 

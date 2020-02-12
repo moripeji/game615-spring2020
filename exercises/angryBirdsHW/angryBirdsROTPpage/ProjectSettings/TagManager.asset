@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Floor
   - Structure
+  - EnemyBlack
+  - EnemyRed
+  - EnemyYellow
+  - EnemyBlue
   layers:
   - Default
   - TransparentFX
