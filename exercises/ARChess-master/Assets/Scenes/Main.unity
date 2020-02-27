@@ -8769,6 +8769,7 @@ GameObject:
   - component: {fileID: 1094132821}
   - component: {fileID: 1094132823}
   - component: {fileID: 1094132824}
+  - component: {fileID: 1094132825}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -8828,6 +8829,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1bea04cc1bd0439193cee8375208428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1094132825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094132820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f35fc67e6bd4f1e97f5809321e0f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalSquare: {fileID: 8812825643725783081}
+  chessboardParent: {fileID: 1199169828}
+  chessPieces: {fileID: 1505585576}
 --- !u!4 &1094396915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4776975246920458, guid: da58a97d99ca08d459b6953f0f52c0ef,
@@ -11924,7 +11940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505585576}
   m_Layer: 0
-  m_Name: Chess Piece
+  m_Name: Chess Pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15498,25 +15514,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 48bb91f9a630aac41ad724f93106fc7a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2fe2afd5e2430749ab0e7b96c7bc0c2, type: 3}
---- !u!1 &1947316561 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1155100382517166, guid: c2fe2afd5e2430749ab0e7b96c7bc0c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1947316560}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1947316562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947316561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b349f4322ea3e44cf86557b8296ae5fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originalSquare: {fileID: 8812825643725783081}
 --- !u!4 &1953284385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9d2d02e592ff0d744a35e1f488301752,
@@ -16874,3 +16871,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8812825643725783080}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8812825643725783086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8812825643725783081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afae1880dcdd54507ab9a0ad752db918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 0
+  j: 0
+  piece: {fileID: 0}
