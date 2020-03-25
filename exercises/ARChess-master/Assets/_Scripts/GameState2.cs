@@ -59,7 +59,7 @@ public class GameState2 : MonoBehaviour
                     ((origin.j + 1 == destination.j && origin.i + 1 == destination.i) && destination.piece &&
                     (piece.name.Contains("White") && destination.piece.name.Contains("Black")) || (piece.name.Contains("Black") && destination.piece.name.Contains("White"))) ||
                     ((origin.j + 1 == destination.j && origin.i - 1 == destination.i) && destination.piece &&
-                    (piece.name.Contains("White") && destination.piece.name.Contains("Black")) || (piece.name.Contains("Black") && destination.piece.name.Contains("White")))
+                    (piece.name.Contains("White") && destination.piece.name.Contains("Black")) || (piece.name.Contains("Black") && destination.piece.name.Contains("White"))))
 
                 {
                     return true;
