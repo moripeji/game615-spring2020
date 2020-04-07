@@ -30,7 +30,7 @@ public class PieceBehavior : MonoBehaviour
         {
             GameState.eliminatePiece(transform); //call the eliminate piece function when health comes to zero or less
             anim.SetTrigger("death");
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 5f);
 
         }
 
