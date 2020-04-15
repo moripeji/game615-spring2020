@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AI : MonoBehaviour
 {
-    public static string ai_player; // name of the player, "Black" by default, but we can change it at a start of the game
+    public static string ai_player; // name of the player
     Transform selectedPiece = null; // current valid piece to move
     Transform selectedSquare = null; // curent valid destination for our piece
     
