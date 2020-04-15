@@ -6,7 +6,7 @@ Preset:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MagicLeapCamera
+  m_Name: MagicLeapCamera 3
   m_TargetType:
     m_NativeTypeID: 20
     m_ManagedTypePPtr: {fileID: 0}
