@@ -6,7 +6,7 @@ using UnityEngine;
  */
 public class InputController : MonoBehaviour
 {
-    string playerColor = "White";
+    public static string playerColor;
     Transform selectedPiece; // reference to the selected piece, initially empty
     Transform selectedSquare; // reference to the selected square, initially empty;
 

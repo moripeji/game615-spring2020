@@ -5,11 +5,14 @@ using UnityEngine.AI;
 
 public class PieceBehavior : MonoBehaviour
 {
+    public AudioClip walkSound;
+    public AudioClip attackSound;
+    public AudioClip dieSound;
 
     NavMeshAgent agent;
     Animator anim;
     public Transform enemy;
-    const int MAX_HEALTH = 20;
+    const int MAX_HEALTH = 50;
     int health = MAX_HEALTH; //we need to introduce a health element so that the pieces know when to attack/ when they are being attacked
 
     // Start is called before the first frame update
@@ -36,6 +39,20 @@ public class PieceBehavior : MonoBehaviour
 
     }
 
+    public void playWalkSound()
+    {
+        GetComponent<AudioSource>().PlayOneShot(walkSound);
+    }
+
+    public void playAttackSound()
+    {
+        GetComponent<AudioSource>().PlayOneShot(attackSound);
+    }
+
+    public void playDieSound()
+    {
+        GetComponent<AudioSource>().PlayOneShot(dieSound);
+    }
 
     /*public IEnumerator waitForAttack()
     {

@@ -8,7 +8,7 @@ using UnityEngine.AI;
  */
 public class GameState : MonoBehaviour
 {
-    string playerColor = "White";
+    //public string playerColor = "White";
     public static bool playersTurn = true; // player, not AI, gets the first move, regardless of color
     public static bool aiTurn = false; // 
     public static Transform[,] chessboard = new Transform[8,8]; // game state two-dimensiona array
