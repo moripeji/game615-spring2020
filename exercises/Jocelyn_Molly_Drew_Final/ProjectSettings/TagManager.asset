@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Crab
+  - Jumper
+  - Octopus
+  - Yeet
+  - Water
+  - Bullet
+  - Wall
+  - Ground
+  - Stalactite
+  - Ceiling
+  - PortalBL
+  - Portal
   layers:
   - Default
   - TransparentFX
@@ -14,11 +26,11 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Pillar
+  - Stone
+  - FallingObjects
+  - Ground
+  - um
   - 
   - 
   - 

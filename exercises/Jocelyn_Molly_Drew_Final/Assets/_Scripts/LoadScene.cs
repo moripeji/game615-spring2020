@@ -10,4 +10,12 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene(levelName);
     }
+
+    public static void ReloadScene()
+    {
+        SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
+    }
 }
+
+//create transitions with "Level ____" between each loaded scene
+// create GAME OVER / YOU DIED! 
